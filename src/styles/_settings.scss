@@ -1,0 +1,47 @@
+
+@font-face {
+    font-family: "Roaring Jungle";
+    src: url(../assets/fonts/Roaring-Jungle.otf);
+}
+@font-face {
+    font-family: "Benguiat";
+    src: url(../assets/fonts/benguiat-bold.ttf);
+}
+@font-face {
+    font-family: "Lato";
+    src: url(../assets/fonts/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: "Lato Black";
+    src: url(../assets/fonts/Lato-Black.ttf);
+}
+
+
+$font-1: "Roaring Jungle", sans-serif;
+$font-2: "Benguiat", sans-serif;
+$font-3: "Lato", sans-serif;
+$font-4: "Lato Black", sans-serif;
+
+$white: #f9f9f9;
+$black: #0e0d0d;
+$color-1: #0a4a2f;
+$color-2: #b9cfc0;
+$color-3: #80a194;
+$color-4: #646a70;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background: $white;
+    color: $color-1;
+  }
+
+  li {
+    list-style: none;
+  }

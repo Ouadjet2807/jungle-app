@@ -1,0 +1,58 @@
+$home_img: url('../../assets/akhil-ramesh.jpg');
+  
+
+  .home {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    padding-left: 25px;
+
+    .title {
+        display: block;
+        width: 70%;
+        margin: 150px auto;
+        font-family: $font-1;
+        text-align: center;
+    
+
+        h2 {
+        
+            font-size: 80px;
+            letter-spacing: 10px;
+        }
+
+        h3 {
+            line-height: 15px;
+            font-size: 40px;
+            letter-spacing: 10px;
+        }
+
+        h1 {
+            background-image: $home_img;
+            background-size: cover;
+            color: transparent;
+            font-size: 150px;
+            line-height: 115px;
+            letter-spacing: 5px;
+            -webkit-background-clip: text;
+
+            
+        }
+    }
+
+    .left {
+
+
+        .plant {
+            position: absolute;
+            display: block;
+            width: 350px;
+            margin: 20px 100px;
+        }
+
+        .shape {
+            margin: 83px -2px;
+            width: 475px;
+        }
+    }
+
+} 

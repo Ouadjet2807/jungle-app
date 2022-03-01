@@ -1,0 +1,44 @@
+nav {
+    padding: 20px;
+    font-family: $font-2;
+    background: $color-1;
+
+
+    ul {
+        width: 500px;
+        display: flex;
+        justify-content: space-around;
+
+        span {
+            font-size: 40px;
+            font-family: "Roaring Jungle", sans-serif;
+            color: $color-3;
+            width: 100px;
+            margin: -10px 10px;
+        }
+
+        a {
+            padding: 5px;
+            color: $white;
+            text-align: center;
+            text-decoration: none;
+            width: 80px;
+            border-radius: 50px;
+            transition: 0.3s ease-in;
+
+            &:hover {
+                color: $color-2;
+         
+            }
+        }
+
+        a.nav-active {
+            color: $color-1;
+            background: $white;
+
+            &:hover {
+                color: $color-2;
+            }
+        }
+    }
+}
