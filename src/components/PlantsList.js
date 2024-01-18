@@ -12,6 +12,7 @@ export default class PlantList extends Component {
         {id: 2, value: "Petite"},
         {id: 3, value: "Moyenne"},
         {id: 4, value: "Grande"},
+        {id: 5, value: "Grimpante"},
 
     ],
     selectedRadio: 'Tout'

@@ -5,14 +5,22 @@ $home_img: url('../../assets/akhil-ramesh.jpg');
     display: grid;
     grid-template-columns: 55% 45%;
     padding-left: 25px;
+    height: 1200px;
+    min-width: 500px;
+    max-width: 1600px;
+    margin: 0 auto;
+    width: auto;
+    position: relative;
 
     .title {
         display: block;
         width: 70%;
-        margin: 150px auto;
+        margin: 0 auto;
         font-family: $font-1;
         text-align: center;
-    
+        top: 77%;
+        transform: translateY(-50%);
+        position: relative;
 
         h2 {
         
@@ -40,7 +48,9 @@ $home_img: url('../../assets/akhil-ramesh.jpg');
     }
 
     .left {
-
+        top: 65%;
+        position: relative;
+        transform: translateY(-50%);
 
         .plant {
             position: absolute;

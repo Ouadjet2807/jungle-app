@@ -9,7 +9,7 @@ import { GiFlowerPot } from 'react-icons/gi';
 export default class Plant extends Component {
     state = {
         showInfo: false,
-        isFavorite : false
+        isFavorite : true
     }
 
 
@@ -27,19 +27,7 @@ export default class Plant extends Component {
  
        const plant = {id, picture, name, scientificName, origin, family, shortL, shortW}
 
-        const addStorage = () => {
-             let storedData = window.localStorage.plants ? window.localStorage.plants.split(",") : [0, ];
-           
-             if (!storedData.includes(plant.id.toString())) {
-                storedData.push(plant.id);
-                window.localStorage.plants = storedData;
-             } 
-             this.setState({
-                isFavorite: !this.state.isFavorite
-              })
-            
-             console.log('yes')
-        }
+    
 
         const removeStorage = () => {
             let storedData = window.localStorage.plants.split(",");
@@ -49,10 +37,7 @@ export default class Plant extends Component {
             this.setState({
                 isFavorite: !this.state.isFavorite
               })
-            
           };
-
-
 
         return (
             <div className="plant" >
@@ -81,7 +66,7 @@ export default class Plant extends Component {
                         { this.state.isFavorite === true ? (
                             <li className= "favoriteChecked"onClick={() => removeStorage()}><i><AiFillHeart /></i> Favoris</li>
                         ) : 
-                            <li className= "favorite" onClick={() => addStorage()}><i><AiFillHeart /></i> Favoris</li>
+                            <li className= "favorite"><i><AiFillHeart /></i> Favoris</li>
                         }
                             <li><i><FaMapMarkerAlt /></i> Origine : {origin}</li>
                             <li><i><BsInfoLg /></i> Famille : {family}</li>

@@ -7,7 +7,7 @@ import Favoris from './pages/Favoris';
 function App() {
   return (
 
-      <BrowserRouter>
+      <BrowserRouter basename="/jungle">
        <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/plantes" element={<Plants />}></Route>

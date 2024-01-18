@@ -1,17 +1,20 @@
-import React, { useEffect }  from 'react';
+import React from 'react';
+import { useEffect } from 'react';
 import Plant from './Plant';
 
 const FavorisList = () => {
 
     useEffect(() => {
-        window.localStorage.plants.getItem(plants.id)
-    }
+      getStorage()
+    }, []);
 
-    );
+    const getStorage = () => {
+        window.localStorage.plants.getItem(plant.id)
+    }
 
     return (
          <div className='favorisContainer'>
-             <Plant >
+             <Plant />
 
 
         </div>

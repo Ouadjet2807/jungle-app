@@ -1,0 +1,237 @@
+h1 {
+    text-align: center;
+    padding: 20px;
+    font-family: $font-1;
+    letter-spacing: 5px;
+    color: $color-3;
+    font-size: 65px;
+}
+
+.plantsContent {
+    background: #fff;
+    width: 900px;
+    padding: 10px 50px 105px 50px;
+    margin: 0 auto;
+    min-height: 520px;
+    max-height: 845px;
+    height: auto;
+    overflow-y: scroll;
+
+         
+    .loaderBox {
+        margin: 0 auto;
+        width: 80%;
+        top: 50%;
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
+      }
+
+    .plants {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        margin: 0 10px;
+
+        .plant {
+            margin: 0 auto;
+        }
+
+        h3 {
+            font-family: $font-2;
+            color: $color-3;
+        }
+
+        h4 {
+            font-family: $font-2;
+            font-style: italic;
+            font-weight: 300;
+            color: $black;
+        }
+
+        h5 {
+            font-family: $font-3;
+
+            span {
+                font-family: $font-4;
+            }
+        }
+
+        .img_box {
+            height: 250px;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+
+            .img {
+            margin: auto  ;
+            width: 150px;
+            min-height: 100px;
+            max-height: 250px;
+            height: 250px;
+            object-fit: contain;
+            display: block;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+        .showInfos {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.507);
+            animation: popup 0.3s ease forwards;
+            transform-origin: center;
+
+            .infosContent {
+                position: relative;
+                display: grid;
+                grid-template-columns: 60% 40%;
+                top: 25%;
+                width: 700px;
+                height: 500px;
+                margin: 0 auto;
+                color: $color-2;
+                background: $white;
+                padding: 20px 0 0 20px;
+                box-shadow: 0 10px 10px #333;
+                animation: popup 0.6s ease forwards;
+                transform: scale(0) translateY(-50%);
+                transform-origin: center;
+
+                @keyframes popup {
+                to {
+                    transform: scale(1);
+                }
+                }
+
+                .left {
+                    height: 480px;
+                    margin: 0 35px 20px 0;
+                
+
+                    .img {
+                    display: block;
+                    margin: 0 auto;
+                    min-width: 150px;
+                    max-width: 300px;
+                    width: auto;
+                    height: 400px;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+
+            }
+
+                .right {
+                    padding: 20px;
+                    margin: -45px 0 0 -15px;
+                    background-color: #fff;
+                    width: 250px;
+                    height: 550px;
+
+                    h2 {
+                        font-family: $font-2;
+                        color: $color-4;
+                    }
+
+                    h4 {
+
+                        line-height: 25px;
+                    }
+
+                    ul {
+                        margin-top: 15px;
+                        line-height: 23px;
+                        height: auto;
+                        min-height: 335px;
+                        max-height: 340px;
+
+                        li {
+                            margin: 10px 0 0 20px;
+                            font-family: "Lato", sans-serif;
+                            color: #646a70;
+                            font-weight: 600;
+                            width: 200px;
+                            font-size: 14px;
+
+                            i {
+                                color: $color-3;
+                                margin: 4px 0 55px -30px;
+                                font-size: 20px !important;
+                                position: absolute;
+                                
+                            }
+
+                        }
+
+                        .favorite {
+                             padding: 15px 0;
+
+                                i {
+                                    color: $color-2;
+                                }
+
+                            &:before, &:after {
+                                height: 1px;
+                                background: $color-4;
+                                width: 100px;
+                            }
+
+                            .btn-favorite {
+                                cursor: pointer;
+                            }
+
+                        }
+                        
+                        .favoriteChecked {
+                            padding: 15px 0;
+
+                            i {
+                                color: $red;
+                            }
+                            &:hover {
+                                cursor: pointer;
+                            }
+
+                        }
+                    }
+
+                    .return {
+                        display: block;
+                        font-family: $font-3;
+                        background: $color-1;
+                        border-radius: 50px;
+                        color: $white;
+                        text-align: center;
+                        width: 100px;
+                        height: 33px;
+                        padding: 5px;
+                        margin: 50px auto;
+                        transition: 0.3s ease-in;
+
+
+                        &:hover {
+                            background: $color-2;
+                            cursor: pointer;
+                        }
+                    }
+
+
+                   
+                }
+            }
+      }
+
+    }
+}
+

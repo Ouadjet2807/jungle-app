@@ -15,20 +15,26 @@
     font-family: "Lato Black";
     src: url(../assets/fonts/Lato-Black.ttf);
 }
+@font-face {
+    font-family: "Playfair Display";
+    src: url(../assets/fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
 
 
 $font-1: "Roaring Jungle", sans-serif;
 $font-2: "Benguiat", sans-serif;
 $font-3: "Lato", sans-serif;
 $font-4: "Lato Black", sans-serif;
+$font-5: "Playfair Display", "sans-serif";
 
 $white: #f9f9f9;
 $black: #0e0d0d;
-$color-1: #0a4a2f;
+$color-1: #254B4F ;
 $color-2: #b9cfc0;
 $color-3: #80a194;
 $color-4: #646a70;
-
+$color-5: #004038;
+$red: rgb(224, 20, 20);
 
 * {
     margin: 0;

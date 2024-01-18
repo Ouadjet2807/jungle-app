@@ -13,7 +13,7 @@ const Home = () => {
             </div>
             <div className="left">
                 <img className="plant" src='./home_plant.png'></img>
-                <img className="shape" src='./graph.png'></img>
+                <img className="shape" src="./graph.png"></img>
             </div>
            </div>
         </>
