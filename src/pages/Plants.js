@@ -1,14 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Header from '../components/Header';
-import PlantList from '../components/PlantsList';
+import PlantsList from '../components/PlantsList';
+import plantData from '../data/plantData';
 
-const Plants = () => {
+const Plants = ({setModal, setSelectedPlant}) => {
+
+    
+  const plants = plantData
+
     return (
         <div>
             <Header />
+          
             <div className="plantList">
                 <h1>Les Plantes</h1>
-                <PlantList />
+                <PlantsList setModal={setModal} setSelectedPlant={setSelectedPlant} plants={plants}/>
             </div>
         </div>
     );

@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <div>
+        <>
             <nav>
                 <span>Jungle</span>
                 <ul>
@@ -13,7 +13,7 @@ const Header = () => {
                     <NavLink to="/favoris" className={(nav) => (nav.isActive ? "nav-active" : "")}>Favoris</NavLink>
                 </ul>
             </nav>
-        </div>
+        </>
     );
 };
 

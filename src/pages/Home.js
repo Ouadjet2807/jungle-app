@@ -14,6 +14,7 @@ const Home = () => {
             <div className="left">
                 <img className="plant" src='./home_plant.png'></img>
                 <img className="shape" src="./graph.png"></img>
+                <div className="plantShadow"></div>
             </div>
            </div>
         </>

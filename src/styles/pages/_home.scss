@@ -1,36 +1,56 @@
 $home_img: url('../../assets/akhil-ramesh.jpg');
-  
+
+    @keyframes bounce {
+        0% {
+            transform: translate(0, 0);
+        }
+        100% {
+            transform: translate(2%, -5%);
+        }
+    }
+
+    @keyframes shadow_scale {
+        0% {
+            transform: scale(1);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(0.8);
+            opacity: 0.7;
+        }
+    }
 
   .home {
     display: grid;
     grid-template-columns: 55% 45%;
     padding-left: 25px;
-    height: 1200px;
-    min-width: 500px;
-    max-width: 1600px;
     margin: 0 auto;
-    width: auto;
-    position: relative;
+    height: max-content;
+    width: max-content;
+    position: absolute;
+    align-items: center;
+    gap: 2vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     .title {
         display: block;
-        width: 70%;
+        width: 50vw;
         margin: 0 auto;
         font-family: $font-1;
         text-align: center;
-        top: 77%;
-        transform: translateY(-50%);
         position: relative;
 
         h2 {
         
-            font-size: 80px;
+            font-size: 5vw;
             letter-spacing: 10px;
         }
 
         h3 {
             line-height: 15px;
-            font-size: 40px;
+            font-size: 3vw;
             letter-spacing: 10px;
         }
 
@@ -38,7 +58,7 @@ $home_img: url('../../assets/akhil-ramesh.jpg');
             background-image: $home_img;
             background-size: cover;
             color: transparent;
-            font-size: 150px;
+            font-size: 12vw;
             line-height: 115px;
             letter-spacing: 5px;
             -webkit-background-clip: text;
@@ -48,21 +68,81 @@ $home_img: url('../../assets/akhil-ramesh.jpg');
     }
 
     .left {
-        top: 65%;
         position: relative;
-        transform: translateY(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
 
         .plant {
             position: absolute;
             display: block;
-            width: 350px;
+            width: 22vw;
             margin: 20px 100px;
+            animation: 3s linear 0s infinite alternate bounce;
+            z-index: 8;
         }
 
         .shape {
-            margin: 83px -2px;
-            width: 475px;
+            width: 32vw;
+            filter: hue-rotate(39deg);
+        }
+
+        .plantShadow {
+            background: #171e27;
+            filter: blur(15px);
+            width: 7vw;
+            height: 2vw;
+            border-radius: 50%;
+            margin-left: 1vw;
+            position: absolute;
+            top: 100%;
+            animation: 3s linear 0s infinite alternate shadow_scale;
         }
     }
 
 } 
+
+
+@media screen and (max-width: 500px) {
+
+    .home {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        margin-top: 30px;
+
+
+        .title {
+            width: 90vw;
+
+
+            h1 {
+                font-size: 27vw;
+                line-height: 55px;
+            }
+
+            h2 {
+                font-size: 8vw;
+            }
+
+            h3 {
+                font-size: 5vw;
+            }
+        }
+
+
+        .left {
+            padding-top: 55px;
+
+            .shape {
+                width: 55vw;
+            }
+
+            .plant {
+                width: 35vw;
+            }
+        }
+    }
+
+}

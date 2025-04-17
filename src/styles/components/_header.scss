@@ -7,10 +7,9 @@ nav {
     gap: 30px;
 
     span {
-        font-size: 40px;
+        font-size: 3vw;
         font-family: $font-1;
         color: $color-3;
-        width: 100px;
         margin: -10px 10px;
     }
 
@@ -39,11 +38,31 @@ nav {
         }
 
         a.nav-active {
-            color: $white;
-            background: $color-3;
-
+            color: $color-3;
+            font-weight: 600;
+            
             &:hover {
                 color: $color-2;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav {
+        gap: 0;
+
+        span {
+            font-size: 5vw;
+            display: flex;
+            align-items: center;
+        }
+
+        ul {
+            gap: 0;
+
+            a {
+                font-size: 4vw;
             }
         }
     }
