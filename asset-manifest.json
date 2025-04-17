@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/jungle-app/static/css/main.023c6629.css",
-    "main.js": "/jungle-app/static/js/main.fe423846.js",
+    "main.js": "/jungle-app/static/js/main.32ff8d40.js",
     "static/media/akhil-ramesh.jpg": "/jungle-app/static/media/akhil-ramesh.8b6b90a1eebee3ecee27.jpg",
     "static/media/PlayfairDisplay-VariableFont_wght.ttf": "/jungle-app/static/media/PlayfairDisplay-VariableFont_wght.20240034b80f50c3ad00.ttf",
     "static/media/Lato-Regular.ttf": "/jungle-app/static/media/Lato-Regular.9d883d540ee2b4de8024.ttf",
@@ -10,10 +10,10 @@
     "static/media/Roaring-Jungle.otf": "/jungle-app/static/media/Roaring-Jungle.8d50e202aec95a5cb57d.otf",
     "index.html": "/jungle-app/index.html",
     "main.023c6629.css.map": "/jungle-app/static/css/main.023c6629.css.map",
-    "main.fe423846.js.map": "/jungle-app/static/js/main.fe423846.js.map"
+    "main.32ff8d40.js.map": "/jungle-app/static/js/main.32ff8d40.js.map"
   },
   "entrypoints": [
     "static/css/main.023c6629.css",
-    "static/js/main.fe423846.js"
+    "static/js/main.32ff8d40.js"
   ]
 }
