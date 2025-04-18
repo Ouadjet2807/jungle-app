@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jungle-app/static/css/main.023c6629.css",
-    "main.js": "/jungle-app/static/js/main.c9194c96.js",
+    "main.css": "/jungle-app/static/css/main.690af584.css",
+    "main.js": "/jungle-app/static/js/main.9e12be3d.js",
     "static/media/akhil-ramesh.jpg": "/jungle-app/static/media/akhil-ramesh.8b6b90a1eebee3ecee27.jpg",
     "static/media/PlayfairDisplay-VariableFont_wght.ttf": "/jungle-app/static/media/PlayfairDisplay-VariableFont_wght.20240034b80f50c3ad00.ttf",
     "static/media/Lato-Regular.ttf": "/jungle-app/static/media/Lato-Regular.9d883d540ee2b4de8024.ttf",
@@ -9,11 +9,11 @@
     "static/media/benguiat-bold.ttf": "/jungle-app/static/media/benguiat-bold.3e9019da456b9caeba14.ttf",
     "static/media/Roaring-Jungle.otf": "/jungle-app/static/media/Roaring-Jungle.8d50e202aec95a5cb57d.otf",
     "index.html": "/jungle-app/index.html",
-    "main.023c6629.css.map": "/jungle-app/static/css/main.023c6629.css.map",
-    "main.c9194c96.js.map": "/jungle-app/static/js/main.c9194c96.js.map"
+    "main.690af584.css.map": "/jungle-app/static/css/main.690af584.css.map",
+    "main.9e12be3d.js.map": "/jungle-app/static/js/main.9e12be3d.js.map"
   },
   "entrypoints": [
-    "static/css/main.023c6629.css",
-    "static/js/main.c9194c96.js"
+    "static/css/main.690af584.css",
+    "static/js/main.9e12be3d.js"
   ]
 }
